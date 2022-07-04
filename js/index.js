@@ -1,6 +1,6 @@
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('../sw.js');
-  console.log('serviceWorker registered');
+  // console.log('serviceWorker registered');
 }
 
 const year = new Date().getFullYear();
