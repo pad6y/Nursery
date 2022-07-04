@@ -1,0 +1,49 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  // font-size: $default-font-size;
+  line-height: 1;
+  color: $color-black;
+}
+
+.heading__primary {
+  text-align: center;
+  font-size: 12rem;
+  color: $color-white;
+}
+
+.heading-secondary {
+  margin: 2rem auto;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(
+    to bottom,
+    $color-white,
+    $color-blue-primary
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+
+  @include respond(tab-port) {
+    font-size: 5rem;
+  }
+
+  @include respond(phone) {
+    font-size: 4.5rem;
+    padding-top: 4rem;
+  }
+}
+
+.blue-heading {
+  padding-top: 2rem;
+  background-image: linear-gradient(
+    to bottom,
+    $color-blue-medium,
+    $color-blue-primary
+  );
+}

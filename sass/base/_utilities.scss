@@ -1,0 +1,25 @@
+.u-margin-left {
+  margin-left: 2rem !important;
+}
+
+.u-margin-top {
+  margin-top: 6rem !important;
+}
+
+.u-medium-padding {
+  padding: 4rem !important;
+
+  @include respond(phone) {
+    padding: 0 !important;
+  }
+}
+
+.u-text-center {
+  text-align: center !important;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

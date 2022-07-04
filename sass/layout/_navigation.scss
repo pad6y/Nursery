@@ -1,0 +1,81 @@
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.section-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  background-color: $color-grey-dark;
+  padding: 0 5rem;
+
+  @include respond(phone) {
+    padding: 0;
+  }
+
+  &-item {
+    height: 100%;
+    padding: 2rem 3rem;
+    font-size: 2rem;
+    text-align: center;
+
+    @include respond(phone) {
+      &:not(:last-child) {
+        border-right: 1px solid $color-white;
+      }
+    }
+
+    @include respond(phone) {
+      margin: 2rem 0;
+      padding: 1rem 1.5rem;
+      font-size: 2.7rem;
+    }
+  }
+
+  &-link {
+    &:link,
+    &:visited {
+      color: $color-white;
+      text-decoration: none;
+    }
+  }
+}
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2rem;
+
+  background-color: $color-blue;
+
+  &__nav {
+    margin-right: 2rem;
+    display: flex;
+    list-style: none;
+
+    @include respond(phone) {
+      margin-right: 0;
+    }
+
+    &-item {
+      margin-right: 2.6rem;
+
+      @include respond(phone) {
+        font-size: 2rem !important;
+      }
+    }
+  }
+}
+
+.icons {
+  color: $color-white;
+  font-size: 2rem;
+  margin-left: 1rem;
+
+  @include respond(phone) {
+    font-size: 5rem;
+  }
+}

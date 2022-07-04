@@ -1,0 +1,46 @@
+.section-story {
+  background-image: linear-gradient(
+    to bottom,
+    $color-blue-primary,
+    $color-blue-medium
+  );
+  padding: 4rem;
+
+  @include respond(phone) {
+    padding: 0;
+  }
+}
+
+.section-features {
+  color: $color-white;
+  padding: 4rem 4rem 0;
+
+  @include respond(phone) {
+    padding: 0;
+  }
+}
+
+.section-operating-time {
+  padding: 4rem;
+
+  @include respond(phone) {
+    padding: 0;
+  }
+}
+
+.section-team {
+  background-image: linear-gradient(to bottom, $color-blue-medium, $color-blue);
+  padding: 4rem;
+
+  @include respond(phone) {
+    padding: 0;
+  }
+}
+
+.fund {
+  background-color: $color-pink;
+  color: $color-white;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 2rem 0;
+}

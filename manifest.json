@@ -1,0 +1,32 @@
+{
+  "short_name": "Nursery",
+  "name": "Newcastle Daycare",
+  "start_url": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#0aa1dd",
+  "background_color": "#2155cd",
+  "icons": [
+    {
+      "src": "./img/icons/ic_launcher.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/icons/ic_launcher144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "./img/icons/180.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./img/icons/ic_launcher512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

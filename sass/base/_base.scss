@@ -1,0 +1,53 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  //This defines what 1rem is
+  font-size: 62.5%;
+  //Phone query unneccessary because its the same as tab-port
+  // @include respond(phone) {
+  //   font-size: 50%; //1rem = 9px, 9/16(browser font-size) = 56.25%
+  // }
+  //always place larger size before smaller so that the smaller size isnt overridden by larger size
+
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem = 12px, 912/16(browser font-size) = 75%
+  }
+
+  @include respond(tab-land) {
+    font-size: 56.25%; //1rem = 9px, 9/16(browser font-size) = 56.25%
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%; //1rem = 8px, 8/16(browser font-size) = 50%
+  }
+
+  @include respond(phone) {
+    font-size: 27.5%; //1rem = 8px, 8/16(browser font-size) = 50%
+  }
+  margin: 0 auto;
+  max-width: 1800px;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0 2rem;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
+}
+
+::selection {
+  background-color: $color-blue-primary;
+  color: $color-white;
+}
+
+main {
+  background-color: $color-blue-medium;
+}

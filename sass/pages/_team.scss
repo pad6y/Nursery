@@ -1,0 +1,116 @@
+.team {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 5rem;
+  padding: 0 10rem;
+
+  @include respond(tab-port) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding: 0 4.5rem;
+    gap: 8rem;
+  }
+
+  &-member {
+    // display: flex;
+    border: 3px solid $color-white;
+    border-radius: 14px;
+    overflow: hidden;
+
+    &-header {
+      background-image: linear-gradient(
+        to left,
+        $color-blue-primary,
+        $color-blue,
+        $color-pink,
+        $color-blue-medium,
+        $color-purple,
+        $color-blue-primary
+      );
+      padding: 3rem;
+      height: 14rem;
+
+      @include respond(tab-port) {
+        height: 16rem;
+      }
+
+      &-container {
+        display: flex;
+        justify-content: space-between;
+
+        @include respond(phone) {
+          margin-top: 4rem;
+        }
+      }
+
+      &-imgHolder {
+        margin: 1rem 0;
+        height: 13rem;
+        width: 13rem;
+        border-radius: 60rem;
+        border: 4px solid $color-blue-primary;
+        padding: 0.4rem;
+        overflow: hidden;
+
+        @include respond(tab-port) {
+          margin-left: 2rem;
+          height: 20rem;
+          width: 20rem;
+        }
+        @include respond(phone) {
+          margin-left: 0;
+          height: 12rem;
+          width: 12rem;
+        }
+
+        &-img {
+          width: 16rem;
+          height: auto;
+          transform: scale(1.2);
+
+          @include respond(phone) {
+            width: 12rem;
+            height: auto;
+          }
+        }
+      }
+
+      &-name {
+        font-size: 2rem;
+        color: $color-white;
+        margin-bottom: 1rem;
+        text-align: left;
+
+        @include respond(tab-port) {
+          font-size: 4rem;
+        }
+
+        &-role {
+          color: $color-white;
+          font-size: 1.2rem;
+          text-align: left;
+
+          @include respond(tab-port) {
+            font-size: 2.2rem;
+          }
+        }
+      }
+    }
+
+    &-desc {
+      margin: 3rem 3rem;
+      font-size: 1.4rem;
+      line-height: 1.4;
+      text-align: left;
+
+      @include respond(tab-port) {
+        margin: 2rem 1rem 1rem 2rem;
+        font-size: 2.4rem;
+      }
+      @include respond(phone) {
+        padding: 0.5rem;
+      }
+    }
+  }
+}

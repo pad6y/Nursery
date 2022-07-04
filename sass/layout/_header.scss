@@ -1,0 +1,140 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  // font-family: 'Ole', sans-serif;
+  // background-color: $color-blue-medium;
+  position: relative;
+  background-image: linear-gradient(
+    to bottom,
+    $color-blue-medium,
+    $color-blue-primary
+  );
+  color: $color-blue-medium;
+
+  // @include respond(phone) {
+  //   height: 45vh;
+  // }
+
+  &-logo {
+    img {
+      width: 60rem;
+      height: auto;
+
+      @include respond(phone) {
+        width: 40rem;
+        height: auto;
+      }
+    }
+  }
+
+  &-slogan {
+    position: absolute;
+    bottom: 0;
+    color: $color-white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 8rem;
+    animation: fadeIn linear 5s;
+    -webkit-animation: fadeIn linear 5s;
+    -moz-animation: fadeIn linear 5s;
+    -o-animation: fadeIn linear 5s;
+    -ms-animation: fadeIn linear 5s;
+    animation-iteration-count: infinite;
+
+    @include respond(tab-port) {
+      margin-bottom: 6rem;
+    }
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
